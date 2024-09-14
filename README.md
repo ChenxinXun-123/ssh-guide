@@ -36,7 +36,7 @@ Adding SSH key for windows
 
     1. Move to user/username/.ssh.
 
-    2. First time use.
+    2. First time use (authorizor mode in windows powershell).
     
     Set-Service -Name ssh-agent -StartupType Automatic
     Start-Service ssh-agent
