@@ -32,6 +32,23 @@ Adding your SSH key to the ssh-agent
 
     $ ssh-add ~/.ssh/id_rsa
 
+Adding SSH key for windows
+
+    1. Move to user/username/.ssh.
+
+    2. First time use.
+    
+    Set-Service -Name ssh-agent -StartupType Automatic
+    Start-Service ssh-agent
+    Get-Service ssh-agent
+
+    3. Start ssh-agent in the background.
+
+    ssh-agent | Out-String
+    ssh-add ./private_key
+
+    
+
   Adding a new SSH key to your GitHub account
 
     To configure your GitHub account to use your new (or existing) SSH key, you'll also need to add it to your GitHub account.
